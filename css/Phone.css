@@ -112,6 +112,7 @@
     width:280px;
     display: none;
     user-select: none;
+    transition: ease-in-out .5s;
 }
 .timewhole{
     position: relative;
@@ -122,12 +123,14 @@
     font-family: lucida handwriting;
     color: #fff;
     font-weight: bold;
+    text-shadow:3px 3px 3px #333 ;
 }
 .datebig{
     font-size: 0.8rem;
     font-family: lucida handwriting;
     color: #fff;
     word-spacing: 5px;
+    text-shadow:3px 3px 3px #333 ;
 }
 #ampm{
     font-size: 0.7rem;

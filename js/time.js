@@ -1,9 +1,14 @@
 
 loadtime = () => {
+    updateTime();
+    changeBackground();
+}
+
+const updateTime = () =>{
     let current = new Date();
     let v = current.getHours();
     let x = current.getMinutes();
-    setTimeout(loadtime, 1000);
+    setTimeout(updateTime, 1000);
     ho.innerText = `${v}:`
     mi.innerText = x
     ho2.innerText = `${v} :`
@@ -32,3 +37,14 @@ loadtime = () => {
     dateget.innerText = ` ${xx}`
     dayget.innerText = day[zz]
 }
+
+const changeBackground = () =>{
+    setTimeout(changeBackground, 3000);
+    let backgroundArray = [ 'baby.jpeg', 'gradient.jpg', 'orsrc16040.jpg', 'smile.jpg', 'blue.jpg', 'panda1.jpg', 'panda2.jpg', 'grey.jpg', 'guitar.jpg' ]
+    let randNum = Math.floor(Math.random()*backgroundArray.length);
+    document.getElementById('homepagemain').style.backgroundImage = `url('../css/img/${backgroundArray[randNum]}')`
+
+}
+
+
+
