@@ -130,7 +130,13 @@
     font-family: lucida handwriting;
     color: #fff;
     word-spacing: 5px;
+}
+.by-licode{
+    font-family: lucida handwriting;
     text-shadow:3px 3px 3px #333 ;
+    position: absolute;
+    top: 10em;
+
 }
 #ampm{
     font-size: 0.7rem;
