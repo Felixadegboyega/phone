@@ -42,7 +42,7 @@ const changeBackground = () =>{
     setTimeout(changeBackground, 3000);
     let backgroundArray = [ 'baby.jpeg', 'gradient.jpg', 'orsrc16040.jpg', 'smile.jpg', 'blue.jpg', 'panda1.jpg', 'panda2.jpg', 'grey.jpg', 'guitar.jpg' ]
     let randNum = Math.floor(Math.random()*backgroundArray.length);
-    document.getElementById('homepagemain').style.backgroundImage = `url('..phone/img/${backgroundArray[randNum]}')`
+    document.getElementById('homepagemain').style.backgroundImage = `url('../phone/img/${backgroundArray[randNum]}')`
 
 }
 
